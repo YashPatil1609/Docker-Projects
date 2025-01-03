@@ -40,7 +40,7 @@ Follow these steps to build and run the containerized application:
 ---
 
 ## Blog
-For a detailed explanation of the project, including architecture and implementation steps, visit [this blog post](https://your-blog-link.com/python-django).
+For a detailed explanation of the project, including architecture and implementation steps, visit [this blog post](https://yashpatilofficial.hashnode.dev/containerizing-a-django-web-application-serving-static-pages-with-docker).
 
 ---
 
