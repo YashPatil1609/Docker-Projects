@@ -23,7 +23,8 @@ This repository includes a variety of Docker projects, each designed to demonstr
 ## **Blogs**
 I’ve written detailed blogs documenting the learning process and technical insights behind these projects. Check them out here:
 
+- [Hashnode](yashpatilofficial.hashnode.dev)
 - [Dev.to](https://dev.to/yash_patil16)
-- [Hashnode](https://hashnode.com/@yashpatil16)
+
 
 ---
