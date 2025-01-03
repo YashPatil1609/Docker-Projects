@@ -36,7 +36,7 @@ Follow these steps to get the project running:
 ---
 
 ## Blog
-For a detailed explanation of the project, including architecture and implementation steps, visit [this blog post](https://your-blog-link.com/mern-employee-record).
+For a detailed explanation of the project, including architecture and implementation steps, visit [this blog post](https://yashpatilofficial.hashnode.dev/containerizing-a-mern-stack-application).
 
 ---
 
