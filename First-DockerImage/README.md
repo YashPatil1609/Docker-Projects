@@ -37,7 +37,7 @@ Follow these steps to build and run the containerized application:
 ---
 
 ## Blog
-To understand Docker's architecture, why it was introduced, and its core concepts (images, containers, and more), read [this blog post](https://your-blog-link.com/understanding-docker).
+To understand Docker's architecture, why it was introduced, and its core concepts (images, containers, and more), read [this blog post](https://yashpatilofficial.hashnode.dev/exploring-docker-the-revolutionary-tool-for-modern-application-development).
 
 ---
 
