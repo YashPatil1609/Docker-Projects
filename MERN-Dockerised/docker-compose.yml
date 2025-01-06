@@ -4,6 +4,7 @@ services:
       
     ports:
       - "5173:5173"
+    image: yashpatil16/mern-frontend:latest
     networks:
       - mern
     
@@ -14,6 +15,7 @@ services:
       
     ports:
       - "5050:5050"
+    image: yashpatil16/mern-backend:latest
     networks:
       - mern
     

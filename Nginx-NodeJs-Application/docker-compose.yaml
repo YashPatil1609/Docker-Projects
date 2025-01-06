@@ -4,6 +4,7 @@ services:
     build: .
     environment:
       - APP_NAME=App1
+    image: yashpatil16/nginx-app1:latest
     ports:
       - "3001:3000"
     
@@ -12,6 +13,7 @@ services:
     build: .
     environment:
       - APP_NAME=App2
+    image: yashpatil16/nginx-app3:latest
     ports:
       - "3002:3000"
     
@@ -21,12 +23,14 @@ services:
     build: .
     environment:
       - APP_NAME=App3
+    image: yashpatil16/nginx-app3:latest
     ports:
       - "3003:3000"
     
 
   nginx:
     build: ./nginx
+    image: yashpatil16/nginx:nodejs-app 
     ports:
       - "8080:8080"
     
