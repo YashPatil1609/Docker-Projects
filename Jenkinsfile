@@ -6,17 +6,17 @@ pipeline{
   stages{
     stage("build"){
       steps{
-        echo "Building the application, Version : {NEW_VERSION}"
+        echo "Building the application, Version : ${NEW_VERSION}"
       }
     }
     stage("test"){
       steps{
-        echo "Testing the application, Version : {NEW_VERSION}"
+        echo "Testing the application, Version : ${NEW_VERSION}"
       }
     }
     stage("deploy"){
       steps{
-        echo "Deploying the application, Version : {NEW_VERSION}"
+        echo "Deploying the application, Version : ${NEW_VERSION}"
       }
     }
 }
