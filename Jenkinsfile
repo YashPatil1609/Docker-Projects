@@ -7,7 +7,7 @@ pipeline{
     stage("build"){
       when{
         expression{
-          NEW_VERSION == '1.0'
+          NEW_VERSION == '2.0'
         }
       }
       steps{
