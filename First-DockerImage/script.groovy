@@ -1,7 +1,8 @@
 def buildImage(){
     echo "Building Image.."
-    sh "docker build -t yashpatil16/firstimage:1.0 ."
-   
+    withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]){
+         sh "docker build -t yashpatil16/firstimage:1.0 ."
+    }
 }
 
 def pushImage(){
