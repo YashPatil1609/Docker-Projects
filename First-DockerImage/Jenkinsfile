@@ -5,9 +5,7 @@ pipeline{
         stage("Initialize groovy script"){
            steps{
                script{
-                   sh 'chmod +r script.groovy'
-
-                   gv = load "script.groovy"
+                   gv = load "/First-DockerImage/script.groovy"
                }
            } 
            
