@@ -1,23 +1,20 @@
-def gv
 pipeline{
     agent any
     stages{
-        stage("Initialize groovy script"){
+        stage("Building and pushing the image"){
            steps{
                script{
-                   gv = load "/First-DockerImage/script.groovy"
+                echo "Building Image.."
+                withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]){
+                sh 'docker build -t yashpatil16/firstimage:1.0 .'
+                sh "echo $PASSWORD | docker login -u $USERNAME --password-stdin"
+                sh "docker push yashpatil16/firstimage:1.0"
+                }
                }
            } 
            
         }
-        stage("Build Image"){
-            steps{
-                script{
-                    gv.buildImage()
-                }
-            }
-
-        }
+        
         
     }
     
