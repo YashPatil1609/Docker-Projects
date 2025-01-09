@@ -1,0 +1,29 @@
+#!/usr/bin/env groovy
+def gv
+pipeline{
+    agent any
+    stages{
+        stage("Loading the script..."){
+            steps{
+                script{
+                    gv = load "./DjangoApp-Containerised/python-web-app/script.groovy"
+                }
+            }
+        }
+        stage("Building the image..."){
+            steps{
+                script{
+                    gv.buildImage("yashpatil16/django-app:1.0")
+                }
+            }
+        }
+        stage("Pushing the image to DockerHub..."){
+            steps{
+                script{
+                    gv.pushImage("yashpatil16/django-app:1.0")
+                }
+            }
+        }
+
+    }
+}

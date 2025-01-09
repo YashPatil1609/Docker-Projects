@@ -1,0 +1,34 @@
+def gv
+pipeline{
+    agent any
+    stages{
+        stage("LOading groovy script"){
+           steps{
+                script{
+                    gv = load "./First-DockerImage/groovyScript.groovy"
+                }
+               }
+           } 
+           
+        
+        stage("Building Image"){
+           steps{
+                script{
+                    gv.buildImage("yashpatil16/first-docker-image:1.0")
+                }
+               }
+           }
+
+        stage("Pushing image to DockerHub"){
+            steps{
+                script{
+                    gv.pushImage("yashpatil16/first-docker-image:1.0")
+                }
+            }
+        } 
+    }       
+}
+
+        
+    
+    
